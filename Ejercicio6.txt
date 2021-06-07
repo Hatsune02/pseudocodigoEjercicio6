@@ -1,0 +1,21 @@
+Algoritmo Ejercicio6
+	menosDe25 <- 0
+	masDe25 <- 0
+	cantidadMas <- 0
+	cantidadMenos <- 0
+	edad <- 0
+	Para i<-1 Hasta 100 Hacer
+		Escribir 'Ingrese la edad'
+		Leer edad
+		Si (edad<25) Entonces
+			cantidadMenos <- cantidadMenos+1
+			menosDe25 <- menosDe25+edad
+		SiNo
+			cantidadMas <- cantidadMas+1
+			masDe25 <- masDe25+edad
+		FinSi
+	FinPara
+	promedioMenos <- menosDe25/cantidadMenos
+	promedioMas <- masDe25/cantidadMas
+	Escribir 'El promedio de personas menores de 25 años es de ',promedioMenos,' y el promedio de personas mayores o iguales de 25 años es de ',promedioMas
+FinAlgoritmo
